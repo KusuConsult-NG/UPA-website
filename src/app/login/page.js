@@ -53,11 +53,11 @@ function LoginContent() {
               Welcome back, {activeTab === "register" ? fullName || "User" : email.split("@")[0] || "Customer"}!
             </h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", marginBottom: "32px" }}>
-              Simulated security authentication succeeded. Your UPA dashboard is fully active and synchronized with Lagos endpoints.
+              Simulated security authentication succeeded. Your UPA dashboard is fully active and synchronized with Jos endpoints.
             </p>
             
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              <Link href="/shop" className="btn btn-primary" style={{ padding: "12px 0", width: "100%" }}>
+              <Link href="/contact" className="btn btn-primary" style={{ padding: "12px 0", width: "100%" }}>
                 Go to Shop & Purchase
               </Link>
               <button

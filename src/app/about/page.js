@@ -39,7 +39,7 @@ export default function About() {
             <div style={{ fontSize: "48px", marginBottom: "16px" }}>🇳🇬</div>
             <h3 style={{ color: "white", fontSize: "22px", marginBottom: "12px" }}>Rooted in Nigeria</h3>
             <p style={{ color: "rgba(255, 255, 255, 0.7)", fontSize: "14px", lineHeight: "1.7", margin: 0 }}>
-              Operating proudly from Lagos, UPA is built specifically to address credit challenges in sub-Saharan Africa. We support local merchants, empower households, and provide young families, students, and entrepreneurs with a dignified runway to own what matters.
+              Operating proudly from Jos, UPA is built specifically to address credit challenges in sub-Saharan Africa. We support local merchants, empower households, and provide young families, students, and entrepreneurs with a dignified runway to own what matters.
             </p>
           </div>
         </div>

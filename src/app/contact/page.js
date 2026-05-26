@@ -102,11 +102,11 @@ export default function Contact() {
             <div className="glass-card" style={{ padding: "32px", backgroundColor: "#fff", display: "flex", gap: "20px" }}>
               <div style={{ fontSize: "32px" }}>📍</div>
               <div>
-                <h3 style={{ fontSize: "18px", marginBottom: "8px", color: "var(--primary-navy)" }}>Lagos Headquarters</h3>
+                <h3 style={{ fontSize: "18px", marginBottom: "8px", color: "var(--primary-navy)" }}>Jos Headquarters</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", margin: 0 }}>
-                  Plot 12, Admiralty Way,<br />
-                  Lekki Phase 1,<br />
-                  Lagos, Nigeria.
+                  Plot 12, Yakubu Gowon Way,<br />
+                  opposite Rayfield Junction,<br />
+                  Jos, Plateau State, Nigeria.
                 </p>
               </div>
             </div>

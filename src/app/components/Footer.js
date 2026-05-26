@@ -50,9 +50,9 @@ export default function Footer() {
             <h4 className="footer-heading">Contact & Trust</h4>
             <p style={{ fontSize: "14px", color: "rgba(255, 255, 255, 0.6)", lineHeight: "1.6", marginBottom: "16px" }}>
               <strong>Headquarters:</strong><br />
-              Plot 12, Admiralty Way,<br />
-              Lekki Phase 1,<br />
-              Lagos, Nigeria.
+              Plot 12, Yakubu Gowon Way,<br />
+              opposite Rayfield Junction,<br />
+              Jos, Plateau State, Nigeria.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "12px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>

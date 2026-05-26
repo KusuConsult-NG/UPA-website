@@ -43,7 +43,7 @@ export default function HowItWorks() {
                 Browse our curated selection of high-quality verified items. From premium smartphones (Samsung, Apple) to essential home power systems (generators, inverters) and home appliances.
               </p>
               <div style={{ marginTop: "16px" }}>
-                <Link href="/shop" style={{ color: "var(--primary-emerald)", fontWeight: "700", fontSize: "14px" }}>
+                <Link href="/contact" style={{ color: "var(--primary-emerald)", fontWeight: "700", fontSize: "14px" }}>
                   Browse Products Catalog →
                 </Link>
               </div>
@@ -94,7 +94,7 @@ export default function HowItWorks() {
               <span style={{ fontSize: "12px", color: "var(--primary-emerald)", fontWeight: "800", textTransform: "uppercase" }}>Step Four</span>
               <h2 style={{ fontSize: "24px", marginTop: "8px", marginBottom: "16px" }}>Enjoy Your Product</h2>
               <p style={{ color: "var(--text-secondary)", fontSize: "15px", lineHeight: "1.7" }}>
-                Once your downpayment is paid, we coordinate home delivery within 48 hours in major metropolitan hubs (Lagos, Abuja, Port Harcourt). Take ownership immediately while continuing your comfortable repayment plan.
+                Once your downpayment is paid, we coordinate home delivery within 48 hours in major metropolitan hubs (Jos, Abuja, Port Harcourt). Take ownership immediately while continuing your comfortable repayment plan.
               </p>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function HowItWorks() {
                 <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px", maxWidth: "560px", margin: "0 auto 24px" }}>
                   You meet all basic metrics for instant pre-approved credit. Create your account and explore products inside the shop immediately!
                 </p>
-                <Link href="/shop" className="btn btn-primary" style={{ padding: "10px 32px" }}>
+                <Link href="/contact" className="btn btn-primary" style={{ padding: "10px 32px" }}>
                   Go to Shop Catalog
                 </Link>
               </div>
