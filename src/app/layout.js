@@ -11,7 +11,7 @@ export const metadata = {
   title: "UPA - Own What You Need. Pay Small Small.",
   description: "Get quality phones, electronics, appliances, and home essentials in Nigeria today while paying in convenient interest-free installments.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/upa_logo.png",
   },
 };
 
