@@ -10,15 +10,8 @@ export default function Footer() {
         <div className="grid-4 footer-top">
           {/* Brand Info */}
           <div className="footer-brand">
-            <Link href="/" className="logo" style={{ display: "flex", alignItems: "center", gap: "8px", color: "#ffffff", textDecoration: "none" }}>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-                <rect width="32" height="32" rx="8" fill="var(--primary-emerald)" />
-                <path d="M9 16.5L13.5 21L23 10.5" stroke="var(--primary-navy)" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M9 11.5H23" stroke="rgba(15, 23, 42, 0.25)" strokeWidth="2.5" strokeLinecap="round" />
-              </svg>
-              <span style={{ fontSize: "22px", fontWeight: "800", letterSpacing: "-0.03em", color: "#ffffff" }}>
-                United<span style={{ color: "var(--primary-emerald)" }}>Pay</span>
-              </span>
+            <Link href="/" className="logo" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", padding: "4px 12px", backgroundColor: "#ffffff", borderRadius: "8px" }}>
+              <img src="/upa_logo.png" alt="UPA Logo" style={{ height: "35px", width: "auto" }} />
             </Link>
             <p className="footer-tagline" style={{ marginTop: "16px", color: "rgba(255, 255, 255, 0.6)", fontSize: "14px", lineHeight: "1.6" }}>
               United Pay For Africa (UPA) is a financial empowerment platform built for everyday Africans. We make quality products accessible and affordable without financial stress.
