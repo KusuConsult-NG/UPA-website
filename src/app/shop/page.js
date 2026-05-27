@@ -259,7 +259,7 @@ function ShopContent() {
           <span style={{ color: "var(--primary-emerald)", fontWeight: "700", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }}>Showcase Catalog</span>
           <h1 style={{ fontSize: "36px", marginTop: "8px" }}>Explore UPA Installments</h1>
           <p style={{ color: "var(--text-muted)", fontSize: "15px", marginTop: "8px", maxWidth: "600px", margin: "8px auto 0" }}>
-            Select any **Smartphone** to run a live payment simulation and credit wizard preview. Other items represent our launch roadmap.
+            Select any <strong style={{ color: "var(--primary-navy)", fontWeight: "700" }}>Smartphone</strong> to run a live payment simulation and credit wizard preview. Other items represent our launch roadmap.
           </p>
         </div>
 
@@ -728,7 +728,7 @@ function ShopContent() {
                 <span style={{ fontSize: "56px" }}>🔔</span>
                 <h3 style={{ fontSize: "20px", color: "var(--primary-navy)", marginTop: "16px", marginBottom: "8px" }}>Notification Registered!</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", marginBottom: "24px" }}>
-                  Excellent! We have successfully registered your address. You will receive immediate priority notification as soon as UPA launches the **{comingSoonProduct.category}** catalog in Nigeria!
+                  Excellent! We have successfully registered your address. You will receive immediate priority notification as soon as UPA launches the <strong>{comingSoonProduct.category}</strong> catalog in Nigeria!
                 </p>
                 <button
                   onClick={() => setComingSoonProduct(null)}
@@ -749,7 +749,7 @@ function ShopContent() {
                 </div>
                 
                 <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", marginBottom: "24px" }}>
-                  The **{comingSoonProduct.name}** plan is scheduled for our Phase 2 expansion. Register your interest below to receive priority access and early-bird notifications!
+                  The <strong>{comingSoonProduct.name}</strong> plan is scheduled for our Phase 2 expansion. Register your interest below to receive priority access and early-bird notifications!
                 </p>
 
                 <div style={{ marginBottom: "24px" }}>
