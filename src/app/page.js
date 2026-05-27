@@ -13,14 +13,14 @@ export default function Home() {
 
   // Categories helper list with dynamic styling icons
   const categories = [
-    { name: "Smartphones", icon: "📱", color: "#E0F2FE", text: "#0369A1", href: "/contact?cat=smartphones" },
-    { name: "Laptops", icon: "💻", color: "#F0FDF4", text: "#15803D", href: "/contact?cat=laptops" },
-    { name: "Televisions", icon: "📺", color: "#EFF6FF", text: "#1D4ED8", href: "/contact?cat=televisions" },
-    { name: "Refrigerators", icon: "❄️", color: "#F5F3FF", text: "#6D28D9", href: "/contact?cat=refrigerators" },
-    { name: "Generators", icon: "⚡", color: "#FFFBEB", text: "#B45309", href: "/contact?cat=generators" },
-    { name: "Home Appliances", icon: "🔌", color: "#ECFDF5", text: "#047857", href: "/contact?cat=appliances" },
-    { name: "Electronics", icon: "🎧", color: "#FDF2F8", text: "#BE185D", href: "/contact?cat=electronics" },
-    { name: "Furniture", icon: "🛋️", color: "#FFF7ED", text: "#C2410C", href: "/contact?cat=furniture" },
+    { name: "Smartphones", icon: "📱", color: "#E0F2FE", text: "#0369A1", href: "/shop?cat=smartphones" },
+    { name: "Laptops", icon: "💻", color: "#F0FDF4", text: "#15803D", href: "/shop?cat=laptops" },
+    { name: "Televisions", icon: "📺", color: "#EFF6FF", text: "#1D4ED8", href: "/shop?cat=televisions" },
+    { name: "Refrigerators", icon: "❄️", color: "#F5F3FF", text: "#6D28D9", href: "/shop?cat=refrigerators" },
+    { name: "Generators", icon: "⚡", color: "#FFFBEB", text: "#B45309", href: "/shop?cat=generators" },
+    { name: "Home Appliances", icon: "🔌", color: "#ECFDF5", text: "#047857", href: "/shop?cat=appliances" },
+    { name: "Electronics", icon: "🎧", color: "#FDF2F8", text: "#BE185D", href: "/shop?cat=electronics" },
+    { name: "Furniture", icon: "🛋️", color: "#FFF7ED", text: "#C2410C", href: "/shop?cat=furniture" },
   ];
 
   // Why choose UPA benefits
@@ -97,7 +97,7 @@ export default function Home() {
               Get quality phones, appliances, gadgets, and everyday essentials today while paying in convenient interest-free installments.
             </p>
             <div style={{ display: "flex", gap: "16px", justifyContent: "center", marginBottom: "40px", flexWrap: "wrap" }}>
-              <Link href="/contact" className="btn btn-primary">
+              <Link href="/shop" className="btn btn-primary">
                 Shop Now <span>→</span>
               </Link>
               <Link href="/how-it-works" className="btn btn-outline">
@@ -234,7 +234,7 @@ export default function Home() {
               <span style={{ color: "var(--primary-emerald)", fontWeight: "700", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }}>Explore Catalog</span>
               <h2 style={{ fontSize: "36px", marginTop: "12px" }}>Shop What Matters Most</h2>
             </div>
-            <Link href="/contact" className="btn btn-outline" style={{ padding: "10px 24px", fontSize: "14px" }}>
+            <Link href="/shop" className="btn btn-outline" style={{ padding: "10px 24px", fontSize: "14px" }}>
               View All Categories
             </Link>
           </div>
@@ -427,7 +427,7 @@ export default function Home() {
               </div>
 
               <Link
-                href={`/contact?amount=${purchaseAmount}&months=${repaymentMonths}`}
+                href={`/shop?amount=${purchaseAmount}`}
                 className="btn btn-primary"
                 style={{ width: "100%", marginTop: "24px" }}
               >
@@ -525,11 +525,11 @@ export default function Home() {
             Get the products you need today and pay comfortably over time with UPA.
           </p>
           <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/login?tab=register" className="btn btn-primary">
-              Get Started
-            </Link>
-            <Link href="/contact" className="btn btn-outline">
+            <Link href="/shop" className="btn btn-primary">
               Shop Now
+            </Link>
+            <Link href="/how-it-works" className="btn btn-outline">
+              How It Works
             </Link>
           </div>
         </div>

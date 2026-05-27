@@ -32,7 +32,7 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Shop", path: "/contact" },
+    { name: "Shop", path: "/shop" },
     { name: "How It Works", path: "/how-it-works" },
     { name: "About Us", path: "/about" },
     { name: "FAQs", path: "/faqs" },
@@ -62,11 +62,8 @@ export default function Header() {
 
         {/* Desktop CTA actions */}
         <div className="nav-actions">
-          <Link href="/login" className="nav-link">
-            Log In
-          </Link>
-          <Link href="/login?tab=register" className="btn btn-primary" style={{ padding: "8px 20px", fontSize: "14px" }}>
-            Get Started
+          <Link href="/shop" className="btn btn-primary" style={{ padding: "8px 20px", fontSize: "14px" }}>
+            Shop Now
           </Link>
         </div>
 
@@ -98,20 +95,12 @@ export default function Header() {
           
           <div className="mobile-nav-actions">
             <Link
-              href="/login"
-              className="btn btn-outline"
-              style={{ width: "100%" }}
-              onClick={closeMobileMenu}
-            >
-              Log In
-            </Link>
-            <Link
-              href="/login?tab=register"
+              href="/shop"
               className="btn btn-primary"
               style={{ width: "100%" }}
               onClick={closeMobileMenu}
             >
-              Sign Up Free
+              Shop Now
             </Link>
           </div>
         </div>

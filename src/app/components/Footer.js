@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className="footer-heading">Quick Links</h4>
             <ul className="footer-links">
               <li><Link href="/" className="footer-link">Home</Link></li>
-              <li><Link href="/contact" className="footer-link">Shop Products</Link></li>
+              <li><Link href="/shop" className="footer-link">Shop Products</Link></li>
               <li><Link href="/how-it-works" className="footer-link">How It Works</Link></li>
               <li><Link href="/about" className="footer-link">About Us</Link></li>
               <li><Link href="/faqs" className="footer-link">FAQs</Link></li>
@@ -36,7 +36,6 @@ export default function Footer() {
             <ul className="footer-links">
               <li><Link href="/payment-plans" className="footer-link">Payment Plans</Link></li>
               <li><Link href="/contact" className="footer-link">Contact Support</Link></li>
-              <li><Link href="/login" className="footer-link">My Account</Link></li>
               <li>
                 <span className="footer-link" style={{ cursor: "default", opacity: 0.6 }}>
                   Partner With Us <small style={{ color: "var(--primary-emerald)", fontWeight: "bold" }}>(Soon)</small>

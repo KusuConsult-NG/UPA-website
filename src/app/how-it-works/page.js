@@ -43,7 +43,7 @@ export default function HowItWorks() {
                 Browse our curated selection of high-quality verified items. From premium smartphones (Samsung, Apple) to essential home power systems (generators, inverters) and home appliances.
               </p>
               <div style={{ marginTop: "16px" }}>
-                <Link href="/contact" style={{ color: "var(--primary-emerald)", fontWeight: "700", fontSize: "14px" }}>
+                <Link href="/shop" style={{ color: "var(--primary-emerald)", fontWeight: "700", fontSize: "14px" }}>
                   Browse Products Catalog →
                 </Link>
               </div>
@@ -238,7 +238,7 @@ export default function HowItWorks() {
                 <p style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px", maxWidth: "560px", margin: "0 auto 24px" }}>
                   You meet all basic metrics for instant pre-approved credit. Create your account and explore products inside the shop immediately!
                 </p>
-                <Link href="/contact" className="btn btn-primary" style={{ padding: "10px 32px" }}>
+                <Link href="/shop" className="btn btn-primary" style={{ padding: "10px 32px" }}>
                   Go to Shop Catalog
                 </Link>
               </div>
