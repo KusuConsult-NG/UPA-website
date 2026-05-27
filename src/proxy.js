@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 export function proxy(request) {
   const host = (request.headers.get("host") || "").toLowerCase();
 
-  // If the user accesses via the non-www apex domain, automatically redirect them to www
-  if (host.includes("unitedpay4africa.com") && !host.includes("www.unitedpay4africa.com")) {
+  // Redirect any traffic from the old unitedpay4africa.com domain to the official upa.africa domain
+  if (host.includes("unitedpay4africa.com")) {
     const targetUrl = new URL(
       request.nextUrl.pathname + request.nextUrl.search,
-      "https://www.unitedpay4africa.com"
+      "https://upa.africa"
     );
-    return NextResponse.redirect(targetUrl, 307);
+    return NextResponse.redirect(targetUrl, 301);
   }
 
   return NextResponse.next();
