@@ -3,26 +3,26 @@ import Link from "next/link";
 export default function PaymentPlans() {
   const tiers = [
     {
-      months: 3,
-      name: "Swift Ownership Plan",
-      desc: "Perfect for gadgets, smartphones, and smaller household electronics.",
-      benefit: "Own it in 90 days. Shortest repayment period, ideal for rapid budgeting cycles.",
+      months: 1,
+      name: "Immediate Spread Plan",
+      desc: "Perfect for fast cash-flow cycles, smaller gadgets, and accessories.",
+      benefit: "Own it in 30 days. Perfect for rapid repayment and quick billing closure.",
       downPayment: "20% Down Payment",
       rate: "0% Interest & Fees"
     },
     {
-      months: 6,
+      months: 2,
       name: "Standard Balanced Plan",
-      desc: "Highly popular. Perfect for medium power generators, TVs, and student laptops.",
-      benefit: "Optimal balance between low monthly outlays and quick loan closure.",
+      desc: "Highly popular. Perfect balance for mid-range smartphones and essentials.",
+      benefit: "Split your payments in half across 60 days with complete peace of mind.",
       downPayment: "20% Down Payment",
       rate: "0% Interest & Fees"
     },
     {
-      months: 9,
-      name: "Max Affordability Plan",
-      desc: "Ideal for high-capacity generators, commercial refrigerators, and complete home furniture sets.",
-      benefit: "Lowest possible monthly outlays, structured specifically around steady incomes.",
+      months: 3,
+      name: "Dignified Cushion Plan",
+      desc: "Maximum duration. Spreads payments comfortably over 90 days for higher-end smartphones.",
+      benefit: "Lowest possible monthly layout, designed to fit comfortably with monthly income cycles.",
       downPayment: "20% Down Payment",
       rate: "0% Interest & Fees"
     }
@@ -57,7 +57,7 @@ export default function PaymentPlans() {
                   width: "fit-content",
                   marginBottom: "12px"
                 }}>
-                  {t.months} Months Spread
+                  {t.months} {t.months === 1 ? "Month" : "Months"} Spread
                 </span>
                 <h3 style={{ fontSize: "22px", marginBottom: "8px" }}>{t.name}</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", marginBottom: "8px" }}>
@@ -100,7 +100,7 @@ export default function PaymentPlans() {
             The 0% Interest Difference
           </h3>
           <p style={{ color: "var(--text-secondary)", fontSize: "14px", textAlign: "center", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-            Traditional consumer loans add compounding interest, processing fees, and insurance charges. Here is a direct calculation of a smartphone purchase (total value ₦300,000) spread over 6 months:
+            Traditional consumer loans add compounding interest, processing fees, and insurance charges. Here is a direct calculation of a smartphone purchase (total value ₦300,000) spread over 3 months:
           </p>
 
           <div style={{ overflowX: "auto" }}>

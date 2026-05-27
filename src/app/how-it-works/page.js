@@ -77,7 +77,7 @@ export default function HowItWorks() {
               <span style={{ fontSize: "12px", color: "var(--primary-emerald)", fontWeight: "800", textTransform: "uppercase" }}>Step Three</span>
               <h2 style={{ fontSize: "24px", marginTop: "8px", marginBottom: "16px" }}>Pay Small Small</h2>
               <p style={{ color: "var(--text-secondary)", fontSize: "15px", lineHeight: "1.7" }}>
-                Pay an initial down payment (usually 20% of the total order value) securely through our online checkout. The remaining 80% is comfortably spread across equal monthly repayments (3, 6, or 9 months) at absolutely 0.00% interest.
+                Pay an initial down payment (usually 20% of the total order value) securely through our online checkout. The remaining 80% is comfortably spread across equal monthly repayments (1, 2, or 3 months) at absolutely 0.00% interest.
               </p>
             </div>
             <div style={{ backgroundColor: "var(--bg-neutral)", borderRadius: "var(--radius-md)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "72px", padding: "40px" }}>

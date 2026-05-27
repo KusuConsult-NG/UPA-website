@@ -6,7 +6,7 @@ import Link from "next/link";
 const FAQ_DATA = [
   {
     q: "How do installment payments work?",
-    a: "You make a small initial down payment (usually 20% of the item's total cost) at checkout, and then spread the remaining balance over agreed monthly installments (3, 6, or 9 months) that comfortably fit your income schedule.",
+    a: "You make a small initial down payment (usually 20% of the item's total cost) at checkout, and then spread the remaining balance over agreed monthly installments (1, 2, or 3 months) that comfortably fit your income schedule.",
     category: "Payments"
   },
   {

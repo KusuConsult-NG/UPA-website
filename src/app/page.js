@@ -37,7 +37,7 @@ export default function Home() {
   const faqs = [
     {
       q: "How do installment payments work?",
-      a: "You make a small initial down payment (usually 20% of the item's total cost) and then spread the remaining balance over agreed monthly installments (3, 6, or 9 months) that comfortably fit your income."
+      a: "You make a small initial down payment (usually 20% of the item's total cost) and then spread the remaining balance over agreed monthly installments (1, 2, or 3 months) that comfortably fit your income."
     },
     {
       q: "Is there interest on payments?",
@@ -332,7 +332,7 @@ export default function Home() {
                 </div>
                 <div style={{ borderLeft: "3px solid var(--primary-emerald)", paddingLeft: "16px" }}>
                   <h4 style={{ fontSize: "18px", marginBottom: "4px" }}>Flexible Durations</h4>
-                  <p style={{ color: "var(--text-muted)", fontSize: "14px" }}>3, 6, or 9 monthly plans</p>
+                  <p style={{ color: "var(--text-muted)", fontSize: "14px" }}>1, 2, or 3 monthly plans</p>
                 </div>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function Home() {
                   Repayment Duration
                 </label>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px" }}>
-                  {[3, 6, 9].map((months) => (
+                  {[1, 2, 3].map((months) => (
                     <button
                       key={months}
                       onClick={() => setRepaymentMonths(months)}
@@ -390,7 +390,7 @@ export default function Home() {
                         transition: "all var(--transition-fast)"
                       }}
                     >
-                      {months} Months
+                      {months} {months === 1 ? "Month" : "Months"}
                     </button>
                   ))}
                 </div>
@@ -418,7 +418,7 @@ export default function Home() {
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div>
                     <span style={{ color: "var(--text-secondary)", fontSize: "14px" }}>Monthly Payment</span>
-                    <div style={{ fontSize: "11px", color: "var(--text-muted)" }}>Spread over {repaymentMonths} months</div>
+                    <div style={{ fontSize: "11px", color: "var(--text-muted)" }}>Spread over {repaymentMonths} {repaymentMonths === 1 ? "month" : "months"}</div>
                   </div>
                   <strong style={{ color: "var(--emerald-dark)", fontSize: "24px", fontWeight: "800" }}>
                     ₦{Math.ceil(monthlyRepayment).toLocaleString()}

@@ -148,7 +148,7 @@ function ShopContent() {
 
   // Active detail modal state (Smartphones)
   const [activeProduct, setActiveProduct] = useState(null);
-  const [modalRepaymentMonths, setModalRepaymentMonths] = useState(6);
+  const [modalRepaymentMonths, setModalRepaymentMonths] = useState(3);
 
   // Wizard credit application state (Smartphones)
   const [isWizardOpen, setIsWizardOpen] = useState(false);
@@ -204,7 +204,7 @@ function ShopContent() {
   const handleOpenPlan = (product) => {
     if (product.isActive) {
       setActiveProduct(product);
-      setModalRepaymentMonths(6);
+      setModalRepaymentMonths(3);
     } else {
       setComingSoonProduct(product);
       setNotificationEmail("");
@@ -343,7 +343,7 @@ function ShopContent() {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "28px" }}>
                 {filteredProducts.map((p) => {
                   const dp = p.price * 0.2;
-                  const mo = (p.price - dp) / 6;
+                  const mo = (p.price - dp) / 3;
 
                   return (
                     <div
@@ -456,7 +456,7 @@ function ShopContent() {
                               <strong>₦{dp.toLocaleString()}</strong>
                             </div>
                             <div style={{ display: "flex", justifyContent: "space-between" }}>
-                              <span>6 Months Installment:</span>
+                              <span>3 Months Installment:</span>
                               <strong style={{ color: "var(--emerald-dark)" }}>₦{Math.ceil(mo).toLocaleString()}/mo</strong>
                             </div>
                           </>
@@ -610,7 +610,7 @@ function ShopContent() {
                 Choose Installment Timeline
               </label>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px" }}>
-                {[3, 6, 9].map((months) => (
+                {[1, 2, 3].map((months) => (
                   <button
                     key={months}
                     onClick={() => setModalRepaymentMonths(months)}
@@ -625,7 +625,7 @@ function ShopContent() {
                       transition: "all var(--transition-fast)"
                     }}
                   >
-                    {months} Months
+                    {months} {months === 1 ? "Month" : "Months"}
                   </button>
                 ))}
               </div>
@@ -654,7 +654,7 @@ function ShopContent() {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div>
                   <span style={{ color: "var(--text-secondary)", fontSize: "14px" }}>Monthly Repayment</span>
-                  <div style={{ fontSize: "10px", color: "var(--text-muted)" }}>Spread across {modalRepaymentMonths} months</div>
+                  <div style={{ fontSize: "10px", color: "var(--text-muted)" }}>Spread across {modalRepaymentMonths} {modalRepaymentMonths === 1 ? "month" : "months"}</div>
                 </div>
                 <strong style={{ color: "var(--emerald-dark)", fontSize: "22px", fontWeight: "800" }}>
                   ₦{Math.ceil((activeProduct.price * 0.8) / modalRepaymentMonths).toLocaleString()}
@@ -1068,7 +1068,7 @@ function ShopContent() {
                   </div>
                   <div style={{ display: "flex", justifyContent: "space-between" }}>
                     <span>Duration:</span>
-                    <strong>{modalRepaymentMonths} Months (0% Interest)</strong>
+                    <strong>{modalRepaymentMonths} {modalRepaymentMonths === 1 ? "Month" : "Months"} (0% Interest)</strong>
                   </div>
                   <div style={{ height: "1px", backgroundColor: "var(--border-light)" }}></div>
                   <div style={{ fontSize: "12px", color: "var(--text-muted)", textAlign: "center" }}>

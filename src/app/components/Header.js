@@ -51,7 +51,7 @@ export default function Header() {
         <nav className="nav-menu">
           {navLinks.map((link) => (
             <Link
-              key={link.path}
+              key={link.name}
               href={link.path}
               className={`nav-link ${pathname === link.path ? "active" : ""}`}
             >
@@ -86,7 +86,7 @@ export default function Header() {
           <nav className="mobile-nav">
             {navLinks.map((link) => (
               <Link
-                key={link.path}
+                key={link.name}
                 href={link.path}
                 className="mobile-nav-link"
                 onClick={closeMobileMenu}
