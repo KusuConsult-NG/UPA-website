@@ -82,8 +82,15 @@ function LoginContent() {
             
             {/* Header Logos */}
             <div style={{ textAlign: "center", marginBottom: "32px" }}>
-              <Link href="/" style={{ fontSize: "28px", fontWeight: "800", color: "var(--primary-navy)" }}>
-                UPA<span style={{ color: "var(--primary-emerald)" }}>.</span>
+              <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
+                <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+                  <rect width="32" height="32" rx="8" fill="var(--primary-navy)" />
+                  <path d="M9 16.5L13.5 21L23 10.5" stroke="var(--primary-emerald)" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M9 11.5H23" stroke="rgba(255, 255, 255, 0.15)" strokeWidth="2.5" strokeLinecap="round" />
+                </svg>
+                <span style={{ fontSize: "26px", fontWeight: "800", letterSpacing: "-0.03em", color: "var(--primary-navy)" }}>
+                  United<span style={{ color: "var(--primary-emerald)" }}>Pay</span>
+                </span>
               </Link>
               <p style={{ color: "var(--text-muted)", fontSize: "13px", marginTop: "4px" }}>
                 Own What You Need. Pay Small Small.

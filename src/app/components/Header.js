@@ -43,8 +43,15 @@ export default function Header() {
     <header className={`site-header ${isShrunk ? "shrunk" : ""}`}>
       <div className="container header-container">
         {/* Logo */}
-        <Link href="/" className="logo" onClick={closeMobileMenu}>
-          UPA<span>.</span>
+        <Link href="/" className="logo" onClick={closeMobileMenu} style={{ display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+            <rect width="32" height="32" rx="8" fill="var(--primary-navy)" />
+            <path d="M9 16.5L13.5 21L23 10.5" stroke="var(--primary-emerald)" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M9 11.5H23" stroke="rgba(255, 255, 255, 0.15)" strokeWidth="2.5" strokeLinecap="round" />
+          </svg>
+          <span style={{ fontSize: "22px", fontWeight: "800", letterSpacing: "-0.03em", color: "var(--primary-navy)" }}>
+            United<span style={{ color: "var(--primary-emerald)" }}>Pay</span>
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
