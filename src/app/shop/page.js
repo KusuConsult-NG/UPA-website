@@ -757,7 +757,7 @@ function ShopContent() {
                   <input
                     type="email"
                     required
-                    placeholder="e.g. subscriber@upa.africa"
+                    placeholder="e.g. subscriber@unitedpay4africa.com"
                     value={notificationEmail}
                     onChange={(e) => setNotificationEmail(e.target.value)}
                     style={{

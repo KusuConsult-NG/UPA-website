@@ -116,8 +116,8 @@ export default function Contact() {
               <div>
                 <h3 style={{ fontSize: "18px", marginBottom: "8px", color: "var(--primary-navy)" }}>Digital Enquiries</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", margin: 0 }}>
-                  <strong>General:</strong> support@upa.africa<br />
-                  <strong>Partnerships:</strong> merchants@upa.africa
+                  <strong>General:</strong> support@unitedpay4africa.com<br />
+                  <strong>Partnerships:</strong> merchants@unitedpay4africa.com
                 </p>
               </div>
             </div>

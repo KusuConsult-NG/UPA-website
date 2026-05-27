@@ -187,7 +187,7 @@ function LoginContent() {
                 <input
                   type="email"
                   required
-                  placeholder="e.g. customer@upa.africa"
+                  placeholder="e.g. customer@unitedpay4africa.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   style={{
