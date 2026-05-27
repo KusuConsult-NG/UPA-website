@@ -104,8 +104,7 @@ export default function Contact() {
               <div>
                 <h3 style={{ fontSize: "18px", marginBottom: "8px", color: "var(--primary-navy)" }}>Jos Headquarters</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "14px", lineHeight: "1.6", margin: 0 }}>
-                  Plot 12, Yakubu Gowon Way,<br />
-                  opposite Rayfield Junction,<br />
+                  No. 20, Ahmedu Bello Way,<br />
                   Jos, Plateau State, Nigeria.
                 </p>
               </div>
